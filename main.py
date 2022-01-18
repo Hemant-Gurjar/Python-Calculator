@@ -27,3 +27,15 @@ for symbols in operations:
   print(symbols)
 operation_symbol = input("Pick an operation from the line above: ")
 
+calculation_function = operation_symbol[operations]
+answer = calculation_function(num1, num2)
+# if operation_symbol == "+":
+#   return add
+# elif operation_symbol == "-":
+#   return subtract
+# elif operation_symbol == "*":
+#   return multiply
+# elif operation_symbol == "/":
+#   return divide
+
+print(f"{num1} {operation_symbol} {num2} = {answer}") 
