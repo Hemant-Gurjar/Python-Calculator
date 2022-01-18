@@ -21,13 +21,11 @@ operations = {
 }
 
 num1 = int(input("What is the first number?: "))
-num2 = int(input("What is the second number?: "))
-
 for symbols in operations:
   print(symbols)
 operation_symbol = input("Pick an operation from the line above: ")
-
-calculation_function = operation_symbol[operations]
+num2 = int(input("What is the second number?: "))
+calculation_function = operations[operation_symbol]
 answer = calculation_function(num1, num2)
 # if operation_symbol == "+":
 #   return add
